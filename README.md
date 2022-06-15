@@ -31,3 +31,11 @@ If you want to edit this for yourself, alter the contents of the reportqr.py fil
 A bit of knowledge of the reportlab for python library is suggested, but not required. You could easily modify the language and keep the formatting as is.
 
 If you want to modify the qrcode, then alter the app.py file. Specifically, the index() function, which takes the form data and generates a qrcode. 
+
+Lastly, but not leastly, this uses flaskboostrap, so the base.html is buried in the virtual environment. If you want to use flask bootstrap (which I suggest you do), after you create your virtual environment, copy the contents of the base.html file into flask_bootstrap file base.html, which is located in the directory:
+```
+~/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html
+```
+
+Results may vary depending on your python version, but it'll be in the venv (virtual environment) somewhere. 
+
